@@ -1,0 +1,16 @@
+changes in the PID Code:
+1) created a constant whiteline
+2) changed error calculation from 2550 to 3550
+3) reduced delay and iterations in the second loop in the autocalib function
+4) commented out the TIMEOUT constant
+5) commented out the sensors array
+6) commented out the last_proportional variable
+7) added a top priority which executes on all white
+8) added a second priority which should execute on 90 turns
+9) reads a white line instead of black
+
+
+
+Notes:
+* KP changes the speed of the motors based on current error
+* KD changes the speed of the motors depending on the LFR is moving away from the line or moving towards the centre

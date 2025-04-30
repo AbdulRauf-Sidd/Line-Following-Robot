@@ -1,0 +1,6 @@
+#include <io.stream>
+#include <Arduino.h>
+
+int main() {
+    unsigned int arr[6] = {digitalRead(A0)};
+}

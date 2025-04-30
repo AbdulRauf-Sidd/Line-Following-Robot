@@ -1,0 +1,40 @@
+class PID {
+  public:
+    int rightMinSpeed;
+    int leftMinSpeed;
+    int rightMaxSpeed;
+    int leftMaxSpeed;
+    int numSensors;
+    int samplesPerSensor;
+
+    PID (int rightmin, int leftmin, int rightmax, int leftmax, int numsens, int samples) {
+      rightMinSpeed = rightmin;
+      leftMinSpeed = leftmin;
+      rightMaxSpeed = rightmax;
+      leftMaxSpeed = leftmax;
+      numSensors = numsens;
+      samplesPerSensor = samples;
+      unsigned int minvalues[numSensors];
+      unsigned int maxvalues[numSensors]; 
+    }
+
+    void read() {
+        digitalRead(A0);
+    }
+
+    void calibrate() {
+      for (int i = 0; i < 1023; i++) {
+        
+      }
+    }
+
+
+    
+};
+void setup() {
+PID object1(12, 2, 3, 4, 5, 6);
+};
+
+void loop() {
+ int i =5;
+}
